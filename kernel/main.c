@@ -15,6 +15,7 @@ main()
     printkinit();
     printk("\n");
     printk("xv6 kernel is booting\n");
+    printk("CPU %d started\n", cpuid());
     printk("\n");
     kinit();            // physical page allocator
     kvminit();          // create kernel page table
